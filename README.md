@@ -1,8 +1,7 @@
 # Profitable-customer-growth-analysis
-An end-to-end customer analytics project using Python and Tableau to analyze revenue, retention, and customer segments.
 This project analyzes historical transactions from a UK online retailer
 to identify customer-retention opportunities, understand revenue
-concentration, and support evidence-based marketing decisions.
+concentration, and support evidence-based marketing decisions using Python and Tableau.
 
 Project overview:
 
@@ -20,7 +19,7 @@ This project uses transaction-level retail data to answer:
 - Which retention actions should the business test first?
 
 
-Tools used
+Tools used:
 - Python for data cleaning and analysis
 - Pandas and NumPy for data processing and calculations
 - Tableau Public for interactive visualization
@@ -40,7 +39,9 @@ orders.
   Revenue per identifiable customer          £2,918.35
   Adjusted 90-day repeat purchase rate           44.2%
   Revenue from repeat orders                     85.0%
-Customer segment findings
+  
+Customer segment findings:
+
   Segment                    Customers       Revenue   Share of revenue
   Champions                        967   £11,699,888              68.5%
   High-value at risk               204    £1,481,889               8.7%
@@ -48,6 +49,7 @@ Customer segment findings
   Recent one-time buyers           372      £130,362               0.8%
   Lapsed repeat buyers           1,474    £1,428,746               8.4%
   Lost one-time buyers           1,290      £393,921               2.3%
+  
 What the findings suggest
 - Protect high-value relationships: Champions account for the
   largest share of observed revenue, so retention and customer-service
@@ -72,7 +74,7 @@ invoice-level transactions from a UK-based online retailer.
 The original Excel dataset is not included in this repository. Download
 it from the official source if you want to rerun the analysis.
 
-Data cleaning
+Data cleaning:
 
 The pipeline applies the following cleaning steps:
 1. Remove rows with missing or invalid customer IDs.
