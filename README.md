@@ -3,7 +3,9 @@ An end-to-end customer analytics project using Python and Tableau to analyze rev
 This project analyzes historical transactions from a UK online retailer
 to identify customer-retention opportunities, understand revenue
 concentration, and support evidence-based marketing decisions.
-Project overview
+
+Project overview:
+
 Retailers need to understand not only how much revenue they generate,
 but also which customers return, which valuable customers may be
 lapsing, and where retention efforts could have the greatest impact.
@@ -16,12 +18,15 @@ This project uses transaction-level retail data to answer:
 - Which high-value customers may warrant a win-back campaign?
 - How does revenue change over time?
 - Which retention actions should the business test first?
+
+
 Tools used
 - Python for data cleaning and analysis
 - Pandas and NumPy for data processing and calculations
 - Tableau Public for interactive visualization
 - Jupyter Notebook for running and checking the analysis
-Key findings
+
+Key findings:
 The analysis covers transactions from 1 December 2009 to 9 December
 2011. After cleaning, the dataset contained 776,844 transaction
 rows, representing 5,853 identifiable customers and 36,600
@@ -66,7 +71,9 @@ invoice-level transactions from a UK-based online retailer.
 - Currency: GBP (£)
 The original Excel dataset is not included in this repository. Download
 it from the official source if you want to rerun the analysis.
+
 Data cleaning
+
 The pipeline applies the following cleaning steps:
 1. Remove rows with missing or invalid customer IDs.
 2. Exclude cancellation invoices (invoice numbers beginning with C).
@@ -79,30 +86,19 @@ The cleaning process reduced the dataset from 1,067,371 raw rows to
 776,844 rows. Because guest checkouts are excluded, customer metrics
 describe identifiable customers rather than every transaction in the raw
 data.
+
 Dashboard
 The Tableau Public dashboard includes:
 - KPI views for revenue, customers, and repeat purchase rate
 - Monthly revenue trend
 - Revenue contribution by customer segment
 - A summary of key business insights
-Open the dashboard: Profitable Customer Growth
-Analysis
+Open the dashboard: https://public.tableau.com/views/ProfitableCustomerGrowthAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 Data interpretation note: The dataset ends on 9 December 2011, so
 December 2011 is a partial month and should not be compared with
 complete months without qualification.
 
-How to run the Python analysis
-1. Download the data
-Download Online Retail II from the UCI dataset page linked above. Keep
-the Excel file locally; do not commit the raw data to this repository.
-2. Install dependencies
-Create and activate a virtual environment if desired, then install the
-packages used by the script:
-python -m venv .venv
-source .venv/bin/activate
-# On Windows: .venv\Scripts\activate
-pip install pandas numpy openpyxl
-3. Run the script
 
 Limitations
 - Historical, observational data: Associations do not establish
